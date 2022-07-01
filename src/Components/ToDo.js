@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ToDo = () => {
     const [tasks, setTasks] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/tasks')
+        fetch('https://glacial-oasis-53632.herokuapp.com/tasks')
             .then(res => res.json())
             .then(data => setTasks(data));
     }, [])

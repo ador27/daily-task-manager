@@ -10,7 +10,7 @@ const AddTask = () => {
 
         console.log(tasks);
 
-        fetch('http://localhost:5000/tasks', {
+        fetch('https://glacial-oasis-53632.herokuapp.com/tasks', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

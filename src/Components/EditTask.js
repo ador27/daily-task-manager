@@ -5,7 +5,7 @@ const EditTask = () => {
     const { id } = useParams();
     const [task, setTask] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/tasks/${id}`;
+        const url = `https://glacial-oasis-53632.herokuapp.com/tasks/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTask(data));
@@ -18,7 +18,7 @@ const EditTask = () => {
         const tasktype = event.target.tasktype.value;
         const UpdatedTask = { task, duration, tasktype };
 
-        const url = `http://localhost:5000/tasks/${id}`;
+        const url = `https://glacial-oasis-53632.herokuapp.com/tasks/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
