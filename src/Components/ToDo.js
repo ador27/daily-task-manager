@@ -12,10 +12,11 @@ const ToDo = () => {
         <div>
             <h1 className='text-blue-600 text-3xl m-4'>To Do List</h1>
             <h2 className='text-red-400 text-2xl m-4'>Total Task: {tasks.length}</h2>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto m-4">
                 <table class="table w-full">
                     <thead>
                         <tr>
+                            <th></th>
                             <th></th>
                             <th>Task Details</th>
                             <th>Duration</th>
@@ -25,6 +26,11 @@ const ToDo = () => {
                     <tbody>
                         {
                             tasks.map((task, index) => <tr>
+                                <div class="form-control">
+                                    <label class="label cursor-pointer">
+                                        <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                                    </label>
+                                </div>
                                 <th>{index + 1}</th>
                                 <td>{task.task}</td>
                                 <td>{task.duration}</td>
