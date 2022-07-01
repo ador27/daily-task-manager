@@ -28,9 +28,9 @@ const AddTask = () => {
         <div className='mb-10 mt-5'>
             <h1 className='text-xl text-cyan-700 m-4'>Add your To-Do Work </h1>
             <form onSubmit={handleAddTask}>
-                <input type="text" name="task" placeholder="Enter Task Here" className="m-2 input input-bordered input-info w-full max-w-xs" /> <br />
-                <input type="date" name="duration" placeholder="duration" className="m-2 input input-bordered input-info w-full max-w-xs" /> <br />
-                <input type="text" name="tasktype" placeholder="Task Type" className="m-2 input input-bordered input-info w-full max-w-xs" /> <br />
+                <input type="text" name="task" placeholder="Enter Task Here" className="m-2 input input-bordered input-info w-full max-w-xs" required /> <br />
+                <input type="date" name="duration" placeholder="duration" className="m-2 input input-bordered input-info w-full max-w-xs" required /> <br />
+                <input type="text" name="tasktype" placeholder="Task Type" className="m-2 input input-bordered input-info w-full max-w-xs" required /> <br />
                 <input className='btn btn-secondary' type="submit" value="Add to List" />
             </form>
 

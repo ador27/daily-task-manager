@@ -37,9 +37,9 @@ const EditTask = () => {
         <div>
             <h2 className='text-3xl text-green-700 m-8'>Edit Task: {task.task}</h2>
             <form onSubmit={handleEditTask}>
-                <input type="text" name="task" placeholder="Enter Task Here" className="m-2 input input-bordered input-info w-full max-w-xs" /> <br />
-                <input type="date" name="duration" placeholder="duration" className="m-2 input input-bordered input-info w-full max-w-xs" /> <br />
-                <input type="text" name="tasktype" placeholder="Task Type" className="m-2 input input-bordered input-info w-full max-w-xs" /> <br />
+                <input type="text" name="task" placeholder="Enter Task Here" className="m-2 input input-bordered input-info w-full max-w-xs" required /> <br />
+                <input type="date" name="duration" placeholder="duration" className="m-2 input input-bordered input-info w-full max-w-xs" required /> <br />
+                <input type="text" name="tasktype" placeholder="Task Type" className="m-2 input input-bordered input-info w-full max-w-xs" required /> <br />
                 <input className='btn btn-secondary m-4' type="submit" value="Update Task" />
             </form>
 
