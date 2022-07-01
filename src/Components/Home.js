@@ -1,5 +1,6 @@
 import React from 'react';
 import AddTask from './AddTask';
+import ToDo from './ToDo';
 
 const Home = () => {
     return (
@@ -9,6 +10,8 @@ const Home = () => {
             </div>
 
             <AddTask></AddTask>
+
+            <ToDo></ToDo>
 
         </div>
     );

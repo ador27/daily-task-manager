@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ToDo = () => {
     const [tasks, setTasks] = useState([]);
@@ -28,6 +29,8 @@ const ToDo = () => {
                                 <td>{task.task}</td>
                                 <td>{task.duration}</td>
                                 <td>{task.tasktype}</td>
+                                <td><Link to={`/edit/${task._id}`}><button class="btn btn-outline">Edit</button></Link></td>
+
                             </tr>)
                         }
 
